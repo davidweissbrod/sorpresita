@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+/* Estilos comunes para todas las pantallas */
+.screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+
+.screen.active {
+  left: 0;
+}
+
+h1, h3 {
+  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.arrow {
+  width: 7px;
+  height: 7px;
+  border: solid burlywood;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+/* Flecha animada */
+.arrow.animate {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+.arrow.right {
+  transform: rotate(-45deg);
+  position: absolute;
+  margin-top: 20px;
+  right: 20px;
+}
+
+.arrow.left {
+  transform: rotate(135deg);
+  position: absolute;
+  left: 20px;
+}
+
+/* Estilos específicos de la Pantalla de Inicio */
+#start {
+  background: linear-gradient(135deg, #fcb69f, #ffecd2);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Necesario para la posición de los elementos */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#start h1 {
+  font-size: 50px;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#start p {
+  font-size: 30px;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Estilo para las imágenes */
+.start-image,
+.turreo-image,
+.ojos-image,
+.comiendo-image,
+.graciosa-image,
+.pegote-image,
+.autismo-image,
+.segundera-image,
+.domada-image,
+.seguro-image,
+.emilia-image,
+.final-image {
+  max-width: 25%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* Estilos para pantallas con contenido específico */
+/* Estilos mejorados para los h1 dentro de .screen */
+.screen h1 {
+  font-size: 25px; /* Tamaño un poco mayor para hacerlos más destacados */
+  text-align: center;
+  color: #333; /* Color oscuro para mayor contraste */
+  margin: 20px 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil para hacer el texto más legible */
+  font-weight: bold; /* Hace que el texto sea más fuerte */
+  max-width: 90%; /* Asegura que el texto no se desborde en pantallas grandes */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px; /* Agrega un pequeño padding lateral */
+  letter-spacing: 1px; /* Espaciado entre letras para hacerlo más aireado */
+}
+
+/* Estilos mejorados para los h3 dentro de .screen */
+.screen h3 {
+  font-size: 22px; /* Aumento un poco el tamaño */
+  text-align: center;
+  color: #555; /* Un color más suave que el h1 */
+  margin-bottom: 30px;
+  font-weight: 500; /* Peso de fuente moderado */
+  line-height: 1.5; /* Espaciado entre líneas */
+  max-width: 80%; /* Limita el ancho máximo para que no ocupe demasiado espacio */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px; /* Padding lateral para un poco de separación */
+  letter-spacing: 0.5px; /* Espaciado entre letras para mayor legibilidad */
+  background: linear-gradient(45deg, #ffb6b6, #ffecb3); /* Fondo de gradiente sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Agrega padding interno */
+}
+
+
+/* Ajuste de los tamaños y posiciones de las flechas */
+.arrow.left, .arrow.right {
+  position: absolute;
+  top: 50%;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}

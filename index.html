@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hola jai</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Pantalla de Inicio -->
+    <div class="screen active" id="start">
+      <h1>Felices 10 meses amooooor 💯</h1>
+      <p>Te amo muchisimo ❤️</p>
+      <div class="arrow right animate" onclick="goToScreen('screen1')"></div>
+      <img src="./img/jai_inicio.jpg" alt="Jai Inicio" class="start-image">
+    </div>
+
+    <!-- Pantalla 1 -->
+    <div class="screen" id="screen1">
+      <div class="arrow left" onclick="goToScreen('start')"></div>
+      <h3>Se que te encanta hacerme esta pregunta, pero yo nunca te la contesto. Asi que creo que esto te va a gustar, sino te obligo a que te guste.</h3>
+      <div class="arrow right" onclick="goToScreen('screen2')"></div>
+    </div>
+
+    <!-- Pantalla 2 -->
+    <div class="screen" id="screen2">
+      <div class="arrow left" onclick="goToScreen('screen1')"></div>
+      <h1>10 meses, 10 razones por las que me enamore de vos 🙌</h1>
+      <div class="arrow right" onclick="goToScreen('screen3')"></div>
+      <img src="./img/jai_arranca.jpg" alt="turreo" class="turreo-image">
+    </div>
+
+    <!-- Pantalla 3 -->
+    <div class="screen" id="screen3">
+      <div class="arrow left" onclick="goToScreen('screen2')"></div>
+      <h1>1. Tus ojos, no te voy a mentir es lo primero que vi de vos y aunque no sea tan profundo es una de las razones</h1>
+      <div class="arrow right" onclick="goToScreen('screen4')"></div>
+      <img src="./img/jai_ojos.jpg" alt="Ojos Jai" class="ojos-image">
+    </div>
+
+     <!-- Pantalla 4 -->
+     <div class="screen" id="screen4">
+        <div class="arrow left" onclick="goToScreen('screen3')"></div>
+        <h1>2. Sos una gordita igual que yo</h1>
+        <div class="arrow right" onclick="goToScreen('screen5')"></div>
+        <img src="./img/jai_comiendo.jpg" alt="Jai comiendo" class="comiendo-image">
+    </div>
+
+    <!-- Pantalla 5 -->
+    <div class="screen" id="screen5">
+        <div class="arrow left" onclick="goToScreen('screen4')"></div>
+        <h1>3. Sos graciosa (a veces)</h1>
+        <div class="arrow right" onclick="goToScreen('screen6')"></div>
+        <img src="./img/jai_graciosa.jpg" alt="Jai Graciosa" class="graciosa-image">
+    </div>
+
+    <!-- Pantalla 6 -->
+    <div class="screen" id="screen6">
+        <div class="arrow left" onclick="goToScreen('screen5')"></div>
+        <h1>4. Lo pegote que sos, hasta me parece raro cuando pensas que me molesta que estes todo el tiempo encima</h1>
+        <div class="arrow right" onclick="goToScreen('screen7')"></div>
+        <img src="./img/jai_pegote.jpg" alt="Jai Gede" class="pegote-image">
+    </div>
+
+    <!-- Pantalla 7 -->
+    <div class="screen" id="screen7">
+        <div class="arrow left" onclick="goToScreen('screen6')"></div>
+        <h1>5. Autismo, no mucho mas que decir (estoy igual)</h1>
+        <div class="arrow right" onclick="goToScreen('screen8')"></div>
+        <img src="./img/jai_autismo.jpg" alt="Autismo" class="autismo-image">
+    </div>
+
+    <!-- Pantalla 8 -->
+    <div class="screen" id="screen8">
+        <div class="arrow left" onclick="goToScreen('screen7')"></div>
+        <h1>6. Me segundeas en todas las pelotudes que quiero hacer</h1>
+        <div class="arrow right" onclick="goToScreen('screen9')"></div>
+        <img src="./img/jai_segundera.JPG" alt="Jai pokemon" class="segundera-image">
+    </div>
+
+    <!-- Pantalla 9 -->
+    <div class="screen" id="screen9">
+        <div class="arrow left" onclick="goToScreen('screen8')"></div>
+        <h1>7. Estas recontra remil domada desde el dia 1</h1>
+        <div class="arrow right" onclick="goToScreen('screen10')"></div>
+        <img src="./img/jai_domada.PNG" alt="Jai domada" class="domada-image">
+    </div>
+
+    <!-- Pantalla 10 -->
+    <div class="screen" id="screen10">
+        <div class="arrow left" onclick="goToScreen('screen9')"></div>
+        <h1>8. Me haces sentir seguro de mi mismo cuando estoy con vos</h1>
+        <div class="arrow right" onclick="goToScreen('screen11')"></div>
+        <img src="./img/jai_seguro.jpg" alt="Jai seguro" class="seguro-image">
+    </div>
+
+    <!-- Pantalla 11 -->
+    <div class="screen" id="screen11">
+        <div class="arrow left" onclick="goToScreen('screen10')"></div>
+        <h1>9. Esta foto (perdon a mi me gusta en serio)</h1>
+        <div class="arrow right" onclick="goToScreen('screen12')"></div>
+        <img src="./img/jai_emilia.jpg" alt="Jai emilia" class="emilia-image">
+    </div>
+
+    <!-- Pantalla 12 -->
+    <div class="screen" id="screen12">
+        <div class="arrow left" onclick="goToScreen('screen11')"></div>
+        <h1>
+            10. Haciendo esto me di cuenta que no puedo describir porque me enamore de vos en 10 pantallitas,
+            me enamore por como sos, como te reis, como hablas, me enamoraste vos y es tu persona la razon por
+            la que estoy enamorado, te amo, felices 10 meses.
+        </h1>
+        <div class="arrow right" onclick="goToScreen('screen13')"></div>
+        <img src="./img/jai_final.jpg" alt="Final" class="final-image">
+    </div>
+
+    <!-- Pantalla 13 -->
+    <div class="screen" id="screen13">
+        <div class="arrow left" onclick="goToScreen('screen12')"></div>
+        <h1>gracias por ver te amo chau</h1>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
