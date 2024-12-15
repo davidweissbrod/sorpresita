@@ -133,6 +133,26 @@ p {
   margin-bottom: 30px;
 }
 
+.segundera-image{
+  height: 520px;
+  width: 690px;
+}
+
+.turreo-image{
+  height: 500px;
+  width: 650px
+}
+
+.domada-image{
+  height: 520px;
+  width: 650px;
+}
+
+.pegote-image{
+  height: 300px;
+  width: 600px;
+}
+
 /* Estilos para pantallas con contenido específico */
 /* Estilos mejorados para los h1 dentro de .screen */
 .screen h1 {
@@ -181,3 +201,33 @@ p {
 .arrow.right {
   right: 10px;
 }
+
+a {
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.flowers-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f5bfda; /* Color de fondo rosa */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Quita el borde */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 18px; /* Tamaño de la letra */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.flowers-button:hover {
+  background-color: #f5bfda; /* Color más claro al pasar el cursor */
+  transform: scale(1.05); /* Hace un pequeño zoom */
+}
+
+.flowers-button:active {
+  background-color: #f5bfda; /* Color al presionar */
+  transform: scale(0.98); /* Efecto de presionado */
+}
+
